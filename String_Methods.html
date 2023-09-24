@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strings Methods</title>
+  </head>
+  <body>
+    <script>
+      var str = "This is harry";
+      console.log(str.length);//it returns the length of the string
+
+      console.log(str.indexOf("harry")); // First Occurance of String
+
+      console.log(str.lastIndexOf("is")); // Last Occurance of String
+
+      console.log(str.slice(0,3)); //slicing 
+
+      console.log(str.substring(0, 6)); // Substring from  a string -> it cannot take negative index
+
+      console.log(str.substr(0, 2)); // it can take negative index also
+
+      console.log(str.toUpperCase()); //Uppercase
+
+      console.log(str.toLowerCase()); //LoweCase
+
+      var replaced = str.replace('harry','abhay'); //replace 
+      console.log(str);
+      console.log(replaced);
+
+      var newStr = str.concat('New String');
+      console.log(newStr); // or we can simply use + operator
+
+    //trim {It remoes white spaces from beginning and ending , not in the middle}
+    var strWithSpaces = '   Hey   this contains    whitespaces  ';
+    console.log(strWithSpaces);
+    console.log(strWithSpaces.trim());
+
+    //to access characters from the string using .charAt(i)
+    var char2 = str.charAt(2);
+    console.log(char2);
+    </script>
+  </body>
+</html>
